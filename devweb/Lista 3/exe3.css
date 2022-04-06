@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 15% 1fr;
+    grid-template-rows: 10% auto 10%;
+    grid-template-areas: 
+        "header header"
+        "sidenav content"
+        "sidenav footer";
+}
+
+.header, 
+.sidenav,
+.content,
+.footer{
+    border: 1px solid green;
+}
+
+.header{
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sidenav{
+    grid-area: sidenav;
+}
+
+.content{
+    grid-area: content;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+.item-menu{
+    list-style-type: none;
+    padding: 10px;
+    margin: 10px;
+}
+
+.header-menu{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    margin-top: 0;
+    margin-left: 10%;
+}
+
+.menu-superior{
+    display: flex;
+}
+
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+
+.item-box{
+    border: 2px solid blue;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    height: 200px;
+    min-width: 300px;
+    flex: 1;
+}
